@@ -1,0 +1,7 @@
+Function FibArray(n)
+create an array F[0...n]
+F[0] <-- 0
+F[1] <--1
+for i from 2 to n
+  F[i] <-- F[i-1] + F[i-2]
+retrun F[n]
