@@ -1,0 +1,10 @@
+/* it's slow algorithm
+*  Input: n>=0
+*  Output: F(n)
+* function FibRecursive(n)
+* if n>=1:
+*   retrun n
+* else 
+*   return FibRecursive(n-1) + FibRecursive(n-2)
+*/
+
