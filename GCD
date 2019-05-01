@@ -1,0 +1,26 @@
+/* EuclidGCD(a,b) */
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    int number1 = input.nextInt();
+    int number2 = input.nextInt();
+    int result = GCD(number1, number2);
+      System.out.print(result);
+  }
+  public static int gcd(int number1, int number2){
+      if(number1==0){
+          return number2;
+      }
+      if(number2==0){
+          return number1;
+      }
+      if (number1>=number2){
+          return gcd(number1%number2, number2);
+      }
+      else {
+          return gcd(number1, number2%number1);
+      }
+  }
+}
